@@ -139,6 +139,10 @@ footer li:last-child:after {
   section#main {
     margin-left:0;
   }
+  .skills li {
+    width:100%;
+    clear:left;
+  }
 }
 .@media all and (orientation:landscape) and (max-device-width:480px) {
   header img {
@@ -146,5 +150,9 @@ footer li:last-child:after {
   }
   section#main {
     margin-left:0;
+  }
+  .skills li {
+    width:100%;
+    clear:left;
   }
 }
