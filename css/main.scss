@@ -1,9 +1,18 @@
 ---
 ---
+$green: #2ECC71;
 $blue: #3498DB;
 $dark: #2C3E50;
 $clouds: #ecf0f1;
+$asbestos: #7F8C8D;
+$white: #fff;
+$purple: #8E44AD;
 
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
 
 body {
   background: $clouds;
@@ -31,6 +40,13 @@ a {
     text-decoration: underline;
     color: lighten($blue, 15%);
   }
+
+  &.external {
+    &:after {
+      content: '›';
+      margin-left: .25rem;
+    }
+  }
 }
 
 .leotartari {
@@ -42,8 +58,7 @@ img {
   max-width: 100%;
 }
 
-.content,
-aside {
+.content {
   margin: 0 auto;
   max-width: 45rem;
   padding: 1rem;
@@ -53,15 +68,44 @@ aside {
   display: flex;
   align-items: center;
   justify-content: center;
-
-  section {
-    padding: 10rem 0;
-  }
 }
 
 section {
   &.introduction {
     padding: 3rem 0;
+
+    img {
+      margin: 0 0 2rem;
+    }
+  }
+
+  &.personal-info {
+    background-color: $green;
+    color: $white;
+    padding: 1rem 0;
+
+    .content {
+      padding: 0;
+    }
+
+    a {
+      color: $white;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    ul {
+      list-style: none;
+      margin: 1rem 0 0;
+      padding: 0;
+    }
+
+    li {
+      margin: 0 0 1rem;
+      padding: 0;
+    }
   }
 
   h1 {
@@ -77,10 +121,10 @@ section {
     margin: 1rem 0 .25rem;
 
     small {
+      color: $asbestos;
       font-size: .75rem;
       letter-spacing: .1rem;
       margin-left: 1rem;
-      opacity: .7;
       text-transform: uppercase;
       vertical-align: .25rem;
     }
@@ -97,7 +141,7 @@ section {
 
   h1 {
     background-color: $dark;
-    color: white;
+    color: $white;
     padding: .5rem;
     margin: 0;
   }
@@ -130,20 +174,20 @@ section {
   }
 
   .caronafacil {
-    background-color: #3498DB;
-    color: white;
+    background-color: $blue;
+    color: $white;
 
     a {
-      color: white;
+      color: $white;
     }
   }
 
   .noitehoje {
-    background-color: #9B59B6;
-    color: white;
+    background-color: $purple;
+    color: $white;
 
     a {
-      color: white;
+      color: $white;
     }
   }
 }

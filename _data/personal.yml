@@ -1,17 +1,11 @@
 ---
 -
-  term: "Marital status"
-  description: "Married"
--
-  term: "Date of birth"
-  description: "September, 8th, 1981"
--
-  term: "Place of birth"
-  description: "Porto Alegre, Brazil"
--
-  term: "Address"
-  description: "Rua Felizardo, 491/1705 Porto Alegre, Brazil"
--
   term: "Contact"
-  description: "+55 51 8044 2001 ltartari@gmail.com"
+  description: "+55 51 8044 2001 <a href='mailto:ltartari@gmail.com' target='_blank'>ltartari@gmail.com</a>"
+-
+  term: "Date of Birth"
+  description: "September 8th, 1981"
+-
+  term: "Marital Status"
+  description: "Married"
 ---

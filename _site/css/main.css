@@ -1,3 +1,9 @@
+@charset "UTF-8";
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
 body {
   background: #ecf0f1;
   background: linear-gradient(to right, #f6f8f9 0%, #e5ebee 100%);
@@ -20,6 +26,9 @@ a {
   a:hover {
     text-decoration: underline;
     color: #75b9e7; }
+  a.external:after {
+    content: '›';
+    margin-left: .25rem; }
 
 .leotartari {
   border-radius: 50%;
@@ -28,8 +37,7 @@ a {
 img {
   max-width: 100%; }
 
-.content,
-aside {
+.content {
   margin: 0 auto;
   max-width: 45rem;
   padding: 1rem; }
@@ -38,11 +46,28 @@ aside {
   display: flex;
   align-items: center;
   justify-content: center; }
-  aside section {
-    padding: 10rem 0; }
 
 section.introduction {
   padding: 3rem 0; }
+  section.introduction img {
+    margin: 0 0 2rem; }
+section.personal-info {
+  background-color: #2ECC71;
+  color: #fff;
+  padding: 1rem 0; }
+  section.personal-info .content {
+    padding: 0; }
+  section.personal-info a {
+    color: #fff; }
+  section.personal-info h1 {
+    margin: 0; }
+  section.personal-info ul {
+    list-style: none;
+    margin: 1rem 0 0;
+    padding: 0; }
+  section.personal-info li {
+    margin: 0 0 1rem;
+    padding: 0; }
 section h1 {
   font-size: .875rem;
   font-weight: bold;
@@ -53,10 +78,10 @@ section h2 {
   font-size: 1.25rem;
   margin: 1rem 0 .25rem; }
   section h2 small {
+    color: #7F8C8D;
     font-size: .75rem;
     letter-spacing: .1rem;
     margin-left: 1rem;
-    opacity: .7;
     text-transform: uppercase;
     vertical-align: .25rem; }
 section p {
@@ -67,7 +92,7 @@ section p {
   text-align: center; }
   .projects h1 {
     background-color: #2C3E50;
-    color: white;
+    color: #fff;
     padding: .5rem;
     margin: 0; }
   .projects p {
@@ -89,14 +114,14 @@ section p {
       color: #2C3E50; }
   .projects .caronafacil {
     background-color: #3498DB;
-    color: white; }
+    color: #fff; }
     .projects .caronafacil a {
-      color: white; }
+      color: #fff; }
   .projects .noitehoje {
-    background-color: #9B59B6;
-    color: white; }
+    background-color: #8E44AD;
+    color: #fff; }
     .projects .noitehoje a {
-      color: white; }
+      color: #fff; }
 
 @media screen and (max-width: 400px) {
   body {
