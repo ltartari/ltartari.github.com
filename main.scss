@@ -1,0 +1,175 @@
+---
+---
+$blue: #3498DB;
+$dark: #2C3E50;
+$clouds: #ecf0f1;
+
+
+body {
+  background: $clouds;
+  background: linear-gradient(to right, #f6f8f9 0%,#e5ebee 100%);
+  color: $dark;
+  font-family: 'Avenir', 'HelveticaNeue', sans-serif;
+  font-size: 1.125rem;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+a {
+  color: $blue;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+    color: lighten($blue, 15%);
+  }
+}
+
+.leotartari {
+  border-radius: 50%;
+  width: 6rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+.content,
+aside {
+  margin: 0 auto;
+  max-width: 45rem;
+  padding: 1rem;
+}
+
+aside {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  section {
+    padding: 10rem 0;
+  }
+}
+
+section {
+  &.introduction {
+    padding: 3rem 0;
+  }
+
+  h1 {
+    font-size: .875rem;
+    font-weight: bold;
+    letter-spacing: .1rem;
+    margin: 3rem 0 1rem;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    margin: 1rem 0 .25rem;
+
+    small {
+      font-size: .75rem;
+      letter-spacing: .1rem;
+      margin-left: 1rem;
+      opacity: .7;
+      text-transform: uppercase;
+      vertical-align: .25rem;
+    }
+  }
+
+  p {
+    margin: 0 0 2rem;
+    max-width: 45rem;
+  }
+}
+
+.projects {
+  text-align: center;
+
+  h1 {
+    background-color: $dark;
+    color: white;
+    padding: .5rem;
+    margin: 0;
+  }
+
+  p {
+    margin: 0 auto;
+  }
+
+  a {
+    font-weight: bold;
+  }
+
+  .project {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    padding: 4rem 2rem;
+    font-size: .875rem;
+  }
+
+  .springboarder {
+    background-color: darken($clouds, 10%);
+    color: $dark;
+
+    a {
+      color: $dark;
+    }
+  }
+
+  .caronafacil {
+    background-color: #3498DB;
+    color: white;
+
+    a {
+      color: white;
+    }
+  }
+
+  .noitehoje {
+    background-color: #9B59B6;
+    color: white;
+
+    a {
+      color: white;
+    }
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  body {
+    text-align: center;
+  }
+
+  section {
+    h2 {
+      small {
+        display: block;
+        margin-left: 0;
+      }
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}

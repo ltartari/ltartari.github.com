@@ -1,0 +1,61 @@
+---
+layout: default
+title: 'Leo Tartari · Designer'
+---
+<main class="content">
+  <section class="introduction">
+    <img class="leotartari" src="/leotartari.png">
+    {% for paragraph in site.data.introduction %}
+      <p>{{paragraph}}</p>
+    {% endfor %}
+  </section>
+
+  <section class="personal-info" hidden>
+    <h1>Personal info</h1>
+    {% for info in site.data.personal %}
+      {{info.term}}
+      <br>
+      {{info.description}}
+    {% endfor %}
+  </section>
+
+  <section class="education">
+    <h1>Education</h1>
+    <p>2001 – 2005 Bachelor of Arts in Communication, Marketing and Design</p>
+    <p>Escola Superior de Propaganda e Marketing (ESPM) · Porto Alegre, Brazil</p>
+  </section>
+
+  <section class="work-experience">
+    <h1>Work Experience</h1>
+    {% for job in site.data.jobs %}
+      <h2><b>{{job.title}}</b> <small>{{job.period}}</small></h2>
+      <p>{{job.description}}</p>
+    {% endfor %}
+  </section>
+</main>
+
+<section class="projects">
+  <h1>Side Projects</h1>
+  {% for project in site.data.projects %}
+    <div class="project {{project.slug}}">
+      <div class="project-wrapper">
+        <img src="/projects/{{project.thumbnail}}" alt="{{project.title}}">
+        <h2><a href="{{project.url}}" target="_blank">{{project.title}}</a></h2>
+        {% for paragraph in project.description %}
+          <p>{{paragraph}}</p>
+        {% endfor %}
+      </div>
+    </div>
+  {% endfor %}
+</section>
+
+<aside>
+  <section class="skills">
+    <h1>Relevant skills</h1>
+    <ul>
+      {% for skill in site.data.skills %}
+        <li>{{skill}}</li>
+      {% endfor %}
+    </ul>
+  </section>
+</aside>
