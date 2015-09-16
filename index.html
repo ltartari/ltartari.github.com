@@ -5,7 +5,7 @@ description: 'Freelance designer'
 ---
 <main>
   <section class="introduction content">
-    <img class="leotartari" src="/leotartari.png">
+    <img class="leotartari" src="/img/leotartari.png">
     {% for paragraph in site.data.introduction %}
       <p>{{paragraph}}</p>
     {% endfor %}
@@ -46,7 +46,7 @@ description: 'Freelance designer'
   {% for project in site.data.projects %}
     <div class="project {{project.slug}}">
       <div class="project-wrapper">
-        <img src="/projects/{{project.thumbnail}}" alt="{{project.title}}">
+        <img src="/img/projects/{{project.thumbnail}}" alt="{{project.title}}">
         <h2><a class="external" href="{{project.url}}" target="_blank">{{project.title}}</a></h2>
         {% for paragraph in project.description %}
           <p>{{paragraph}}</p>
