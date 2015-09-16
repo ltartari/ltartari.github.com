@@ -2,10 +2,12 @@
 *,
 *:before,
 *:after {
-  box-sizing: border-box; }
+  -moz-box-sizing: border-box;
+       box-sizing: border-box; }
 
 body {
   background: #ecf0f1;
+  background: -webkit-linear-gradient(left, #f6f8f9 0%, #e5ebee 100%);
   background: linear-gradient(to right, #f6f8f9 0%, #e5ebee 100%);
   color: #2C3E50;
   font-family: 'Avenir', 'HelveticaNeue', sans-serif;
@@ -51,9 +53,18 @@ img {
   padding: 1rem; }
 
 aside {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center; }
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
   aside section li {
     font-size: .875rem;
     margin-bottom: 1.5rem; }
@@ -78,7 +89,9 @@ section.personal-info {
     section.personal-info h1 a {
       padding: 1rem 0; }
       section.personal-info h1 a.closed:after {
-        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+                transform: rotate(180deg);
         vertical-align: .25rem; }
       section.personal-info h1 a:after {
         content: '⌃';
@@ -133,9 +146,18 @@ section.skills {
   .projects a {
     font-weight: bold; }
   .projects .project {
-    align-items: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     height: 100vh;
     overflow: hidden;
     padding: 1rem; }

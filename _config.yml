@@ -3,4 +3,9 @@ exclude:
   - CNAME
   - Gemfile
   - Gemfile.lock
+  - README.md
+  - LICENSE.md
   - .ruby-version
+
+gems:
+  - octopress-autoprefixer
