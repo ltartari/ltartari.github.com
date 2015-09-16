@@ -30,6 +30,14 @@ a {
     content: '›';
     margin-left: .25rem; }
 
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+li {
+  margin-bottom: 1rem; }
+
 .leotartari {
   border-radius: 50%;
   width: 6rem; }
@@ -39,32 +47,53 @@ img {
 
 .content {
   margin: 0 auto;
-  max-width: 45rem;
+  max-width: 35rem;
   padding: 1rem; }
 
 aside {
   display: flex;
   align-items: center;
   justify-content: center; }
+  aside section li {
+    font-size: .875rem;
+    margin-bottom: 1.5rem; }
 
 section.introduction {
-  padding: 3rem 0; }
+  padding: 3rem 0;
+  text-align: center; }
   section.introduction img {
     margin: 0 0 2rem; }
 section.personal-info {
-  background-color: #2ECC71;
-  color: #fff;
-  padding: 1rem 0; }
-  section.personal-info .content {
-    padding: 0; }
+  background-color: #3498DB;
+  color: #2C3E50;
+  text-align: center; }
   section.personal-info a {
+    display: block;
     color: #fff; }
+  section.personal-info b {
+    text-transform: uppercase;
+    font-size: .75rem; }
   section.personal-info h1 {
     margin: 0; }
+    section.personal-info h1 a {
+      padding: 1rem 0; }
+      section.personal-info h1 a.closed:after {
+        transform: rotate(180deg);
+        vertical-align: .25rem; }
+      section.personal-info h1 a:after {
+        content: '⌃';
+        display: inline-block;
+        line-height: 0;
+        margin-left: .5rem;
+        vertical-align: -.15rem;
+        vertical-align: sub; }
+      section.personal-info h1 a:hover {
+        background: rgba(255, 255, 255, 0.15);
+        text-decoration: none; }
   section.personal-info ul {
     list-style: none;
-    margin: 1rem 0 0;
-    padding: 0; }
+    margin: 0;
+    padding: 1rem 0; }
   section.personal-info li {
     margin: 0 0 1rem;
     padding: 0; }
@@ -83,13 +112,17 @@ section h2 {
     letter-spacing: .1rem;
     margin-left: 1rem;
     text-transform: uppercase;
-    vertical-align: .25rem; }
+    vertical-align: .15rem; }
 section p {
   margin: 0 0 2rem;
   max-width: 45rem; }
+section.skills {
+  text-align: center; }
 
 .projects {
   text-align: center; }
+  .projects img {
+    max-height: 50vh; }
   .projects h1 {
     background-color: #2C3E50;
     color: #fff;
@@ -105,8 +138,7 @@ section p {
     justify-content: center;
     height: 100vh;
     overflow: hidden;
-    padding: 4rem 2rem;
-    font-size: .875rem; }
+    padding: 1rem; }
   .projects .springboarder {
     background-color: #cfd9db;
     color: #2C3E50; }
@@ -129,10 +161,4 @@ section p {
 
   section h2 small {
     display: block;
-    margin-left: 0; }
-  section ul {
-    list-style: none;
-    margin: 0;
-    padding: 0; }
-    section ul li {
-      margin-bottom: 1rem; } }
+    margin-left: 0; } }

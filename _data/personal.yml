@@ -1,11 +1,14 @@
 ---
 -
-  term: "Contact"
-  description: "+55 51 8044 2001 <a href='mailto:ltartari@gmail.com' target='_blank'>ltartari@gmail.com</a>"
+  title: "Contact"
+  description: "+55 51 8044 2001<br><a href='mailto:ltartari@gmail.com' target='_blank'>ltartari@gmail.com</a>"
 -
-  term: "Date of Birth"
+  title: "Date of Birth"
   description: "September 8th, 1981"
 -
-  term: "Marital Status"
+  title: "current address"
+  description: "Porto Alegre, Brazil"
+-
+  title: "Marital Status"
   description: "Married"
 ---

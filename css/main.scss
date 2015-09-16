@@ -49,6 +49,16 @@ a {
   }
 }
 
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 1rem;
+}
+
 .leotartari {
   border-radius: 50%;
   width: 6rem;
@@ -60,7 +70,7 @@ img {
 
 .content {
   margin: 0 auto;
-  max-width: 45rem;
+  max-width: 35rem;
   padding: 1rem;
 }
 
@@ -68,11 +78,19 @@ aside {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  section {
+    li {
+      font-size: .875rem;
+      margin-bottom: 1.5rem;
+    }
+  }
 }
 
 section {
   &.introduction {
     padding: 3rem 0;
+    text-align: center;
 
     img {
       margin: 0 0 2rem;
@@ -80,26 +98,53 @@ section {
   }
 
   &.personal-info {
-    background-color: $green;
-    color: $white;
-    padding: 1rem 0;
-
-    .content {
-      padding: 0;
-    }
+    background-color: $blue;
+    color: $dark;
+    text-align: center;
 
     a {
+      display: block;
       color: $white;
+    }
+
+    b {
+      text-transform: uppercase;
+      font-size: .75rem;
     }
 
     h1 {
       margin: 0;
+
+      a {
+        padding: 1rem 0;
+
+        &.closed {
+          &:after {
+            transform: rotate(180deg);
+            vertical-align: .25rem;
+          }
+        }
+
+        &:after {
+          content: '⌃';
+          display: inline-block;
+          line-height: 0;
+          margin-left: .5rem;
+          vertical-align: -.15rem;
+          vertical-align: sub;
+        }
+
+        &:hover {
+          background: rgba($white, .15);
+          text-decoration: none;
+        }
+      }
     }
 
     ul {
       list-style: none;
-      margin: 1rem 0 0;
-      padding: 0;
+      margin: 0;
+      padding: 1rem 0;
     }
 
     li {
@@ -126,7 +171,7 @@ section {
       letter-spacing: .1rem;
       margin-left: 1rem;
       text-transform: uppercase;
-      vertical-align: .25rem;
+      vertical-align: .15rem;
     }
   }
 
@@ -134,10 +179,18 @@ section {
     margin: 0 0 2rem;
     max-width: 45rem;
   }
+
+  &.skills {
+    text-align: center;
+  }
 }
 
 .projects {
   text-align: center;
+
+  img {
+    max-height: 50vh;
+  }
 
   h1 {
     background-color: $dark;
@@ -160,8 +213,7 @@ section {
     justify-content: center;
     height: 100vh;
     overflow: hidden;
-    padding: 4rem 2rem;
-    font-size: .875rem;
+    padding: 1rem;
   }
 
   .springboarder {
@@ -203,16 +255,6 @@ section {
       small {
         display: block;
         margin-left: 0;
-      }
-    }
-
-    ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-
-      li {
-        margin-bottom: 1rem;
       }
     }
   }

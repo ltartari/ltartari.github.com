@@ -1,6 +1,7 @@
 ---
 layout: default
 title: 'Leo Tartari · Designer'
+description: 'Freelance designer'
 ---
 <main>
   <section class="introduction content">
@@ -11,23 +12,23 @@ title: 'Leo Tartari · Designer'
   </section>
 
   <section class="personal-info">
-    <div class="content">
-      <h1><a class="toggle-personal-info" href="#">Personal info <span>+</span></a></h1>
-      <ul class="personal-info-list" hidden>
-        {% for info in site.data.personal %}
-          <li>
-            <b>{{info.term}}</b>
-            <br>
-            {{info.description}}
-          </li>
-        {% endfor %}
-      </ul>
-    </div>
+    <h1>
+      <a class="toggle-personal-info closed" href="#">Personal info</a>
+    </h1>
+    <ul class="personal-info-list" hidden>
+      {% for info in site.data.personal %}
+        <li>
+          <b>{{info.title}}</b>
+          <br>
+          {{info.description}}
+        </li>
+      {% endfor %}
+    </ul>
   </section>
 
   <section class="education content">
     <h1>Education</h1>
-    <p>2001 – 2005 Bachelor of Arts in Communication, Marketing and Design</p>
+    <p>Bachelor of Arts in Communication, Marketing and Design (Conclusion 2005)</p>
     <p>Escola Superior de Propaganda e Marketing (ESPM) · Porto Alegre, Brazil</p>
   </section>
 
