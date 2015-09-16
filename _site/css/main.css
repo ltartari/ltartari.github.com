@@ -98,8 +98,7 @@ section.personal-info {
         display: inline-block;
         line-height: 0;
         margin-left: .5rem;
-        vertical-align: -.15rem;
-        vertical-align: sub; }
+        vertical-align: -.15rem; }
       section.personal-info h1 a:hover {
         background: rgba(255, 255, 255, 0.15);
         text-decoration: none; }
