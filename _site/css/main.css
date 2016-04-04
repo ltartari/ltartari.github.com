@@ -2,8 +2,7 @@
 *,
 *:before,
 *:after {
-  -moz-box-sizing: border-box;
-       box-sizing: border-box; }
+  box-sizing: border-box; }
 
 body {
   background: #ecf0f1;
@@ -90,7 +89,6 @@ section.personal-info {
       padding: 1rem 0; }
       section.personal-info h1 a.closed:after {
         -webkit-transform: rotate(180deg);
-            -ms-transform: rotate(180deg);
                 transform: rotate(180deg);
         vertical-align: .25rem; }
       section.personal-info h1 a:after {

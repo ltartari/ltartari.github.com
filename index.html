@@ -11,27 +11,6 @@ description: 'Freelance designer'
     {% endfor %}
   </section>
 
-  <section class="personal-info">
-    <h1>
-      <a class="toggle-personal-info closed" href="#">Personal info</a>
-    </h1>
-    <ul class="personal-info-list" hidden>
-      {% for info in site.data.personal %}
-        <li>
-          <b>{{info.title}}</b>
-          <br>
-          {{info.description}}
-        </li>
-      {% endfor %}
-    </ul>
-  </section>
-
-  <section class="education content">
-    <h1>Education</h1>
-    <p>Bachelor of Arts in Communication, Marketing and Design (Conclusion 2005)</p>
-    <p>Escola Superior de Propaganda e Marketing (ESPM) · Porto Alegre, Brazil</p>
-  </section>
-
   <section class="work-experience content">
     <h1>Work Experience</h1>
     {% for job in site.data.jobs %}
@@ -40,21 +19,6 @@ description: 'Freelance designer'
     {% endfor %}
   </section>
 </main>
-
-<section class="projects">
-  <h1>Side Projects</h1>
-  {% for project in site.data.projects %}
-    <div class="project {{project.slug}}">
-      <div class="project-wrapper">
-        <img src="/img/projects/{{project.thumbnail}}" alt="{{project.title}}">
-        <h2><a class="external" href="{{project.url}}" target="_blank">{{project.title}}</a></h2>
-        {% for paragraph in project.description %}
-          <p>{{paragraph}}</p>
-        {% endfor %}
-      </div>
-    </div>
-  {% endfor %}
-</section>
 
 <aside>
   <section class="skills content">

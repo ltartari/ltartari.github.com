@@ -15,7 +15,7 @@ ltartari.github.com
 ### Running
 
 ```
-% bundle start jekyll serve
+% bundle exec jekyll serve
 ```
 
 Access on `http://localhost:4000`
