@@ -1,23 +1,23 @@
 ---
 -
+  slug: "pulsus"
+  title: "Pulsus"
+  url: "http://pulsus.mobi"
+  thumbnail: "pulsus.png"
+  description:
+    - "A Mobile Device Management solution."
+-
+  slug: "dunno"
+  title: "Dunno"
+  url: "http://beta.dunnoapp.com/"
+  thumbnail: "dunno.png"
+  description:
+    - "A new way to teach and learn."
+-
   slug: "caronafacil"
   title: "Carona Fácil"
   url: "http://caronafacil.com"
-  thumbnail: 'carona.png'
+  thumbnail: "carona.png"
   description:
     - "An easy and fast way to offer or ask for a ride, putting in touch people with common destinations."
--
-  slug: "springboarder"
-  title: "Springboarder"
-  url: "http://springboarder.me"
-  thumbnail: 'springboarder.png'
-  description:
-    - "A collection of curated interviews about people’s home screens and apps they use on their mobile devices."
--
-  slug: "noitehoje"
-  title: "Noite Hoje"
-  url: "http://noitehoje.com.br"
-  thumbnail: 'noitehoje.png'
-  description:
-    - "A curated list with the best concerts and parties in your town, available for iOS (both iPhone and iPad) and Android."
 ---

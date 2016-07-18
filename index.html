@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 'Leo Tartari · Designer'
-description: 'Freelance designer'
+description: 'Designer'
 ---
 <main>
   <section class="introduction content">
@@ -9,24 +9,25 @@ description: 'Freelance designer'
     {% for paragraph in site.data.introduction %}
       <p>{{paragraph}}</p>
     {% endfor %}
-  </section>
-
-  <section class="work-experience content">
-    <h1>Work Experience</h1>
-    {% for job in site.data.jobs %}
-      <h2><b>{{job.title}}</b> <small>{{job.period}}</small></h2>
-      <p>{{job.description}}</p>
-    {% endfor %}
+    <p>
+      {% for social in site.data.social %}
+        <small><a href="{{social.url}}" target="_blank">{{social.title}}</a></small>
+      {% endfor %}
+    </p>
   </section>
 </main>
 
-<aside>
-  <section class="skills content">
-    <h1>Relevant skills</h1>
-    <ul>
-      {% for skill in site.data.skills %}
-        <li>{{skill}}</li>
-      {% endfor %}
-    </ul>
-  </section>
-</aside>
+<section class="projects">
+  <h3>SAMPLE PROJECTS</h3>
+  {% for project in site.data.projects %}
+    <div class="project project-{{project.slug}}">
+      <img class="project-thumbnail" src="/img/projects/{{project.thumbnail}}" alt="{{project.title}}">
+      <div class="project-content">
+        <h2><a href="{{project.url}}" target="_blank">{{project.title}}</a></h2>
+        {% for paragraph in project.description %}
+          <p>{{paragraph}}</p>
+        {% endfor %}
+      </div>
+    </div>
+  {% endfor %}
+</section>
