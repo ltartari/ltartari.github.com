@@ -79,11 +79,11 @@ main,
   background: $midnight;
   color: $white;
   padding: 3rem 0;
+  text-align: center;
 
   h3 {
     font-size: .75rem;
     opacity: .54;
-    text-align: center;
     margin: 0;
   }
 }
@@ -97,7 +97,6 @@ main,
 
   &-content {
     padding-left: 1rem;
-    text-align: center;
   }
 
   h2,

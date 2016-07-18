@@ -51,11 +51,11 @@ main,
 .projects {
   background: #2c3e50;
   color: #fff;
-  padding: 3rem 0; }
+  padding: 3rem 0;
+  text-align: center; }
   .projects h3 {
     font-size: .75rem;
     opacity: .54;
-    text-align: center;
     margin: 0; }
 
 .project {
@@ -63,8 +63,7 @@ main,
   .project:last-child {
     padding-bottom: 0; }
   .project-content {
-    padding-left: 1rem;
-    text-align: center; }
+    padding-left: 1rem; }
   .project h2,
   .project p {
     margin: 0; }
