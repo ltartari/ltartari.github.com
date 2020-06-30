@@ -7,5 +7,5 @@ exclude:
   - LICENSE.md
   - .ruby-version
 
-gems:
+plugins:
   - octopress-autoprefixer
