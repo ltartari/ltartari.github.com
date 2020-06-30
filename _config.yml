@@ -9,3 +9,7 @@ exclude:
 
 plugins:
   - octopress-autoprefixer
+  - jekyll-inline-svg
+
+svg:
+  optimize: true
