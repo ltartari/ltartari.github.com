@@ -252,7 +252,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  github-pages (= 206)
+  github-pages
   jekyll-inline-svg
   octopress-autoprefixer
 
