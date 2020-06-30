@@ -9,11 +9,6 @@ description: 'Designer'
     {% for paragraph in site.data.introduction %}
       <p>{{paragraph}}</p>
     {% endfor %}
-    <p>
-      {% for social in site.data.social %}
-        <small><a href="{{social.url}}" target="_blank">{{social.title}}</a></small>
-      {% endfor %}
-    </p>
   </section>
   <footer>{% svg /img/sigil.svg %}</footer>
 </main>
