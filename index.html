@@ -17,18 +17,3 @@ description: 'Designer'
   </section>
   <footer>{% svg /img/sigil.svg %}</footer>
 </main>
-
-<section class="projects">
-  <h3>SAMPLE PROJECTS</h3>
-  {% for project in site.data.projects %}
-    <div class="project project-{{project.slug}}">
-      <img class="project-thumbnail" src="/img/projects/{{project.thumbnail}}" alt="{{project.title}}">
-      <div class="project-content">
-        <h2><a href="{{project.url}}" target="_blank">{{project.title}}</a></h2>
-        {% for paragraph in project.description %}
-          <p>{{paragraph}}</p>
-        {% endfor %}
-      </div>
-    </div>
-  {% endfor %}
-</section>
