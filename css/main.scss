@@ -137,3 +137,13 @@ h1 {
     color: var(--blue);
   }
 }
+
+.privacy-policy {
+  padding: 4rem 0;
+  text-align: left;
+}
+
+.privacy-policy h1,
+.privacy-policy h2 {
+  line-height: 1em;
+}
